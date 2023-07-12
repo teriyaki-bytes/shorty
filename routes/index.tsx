@@ -2,11 +2,8 @@ import { Head } from "$fresh/runtime.ts";
 import { useSignal } from "@preact/signals";
 import Shortener from "../islands/Shortener.tsx";
 
-import { useState } from "preact/hooks";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { SITE_URL } from "../config.ts";
 import { generateShortcode } from "../lib/shortcode.ts";
-import { Button } from "../components/Button.tsx";
 
 interface Data {
   shortCode?: string
