@@ -1,5 +1,5 @@
 import { HandlerContext } from "$fresh/server.ts";
-import { ShortcodeStore } from "../lib/shortcode.ts";
+import { ShortcodeStore } from "@/lib/shortcode.ts";
 
 // export default function Greet(props: PageProps) {
 //   return <div>Hello {props.params.slug}</div>;
