@@ -23,7 +23,7 @@ export const handler: Handlers<Data> = {
     const url = form.get("s")!.toString();
     let shortCode = "";
     // https://deno.land/manual@v1.35.0/runtime/kv
-    const kv = await Deno.openKv("database/records.db");
+    const kv = await Deno.openKv();
     const res = await kv.get(["links", url]);
     if (res.value) {
       shortCode = (res.value as Data).shortCode!;

@@ -10,7 +10,7 @@ export const handler = {
     const slug = encodeURIComponent(ctx.params.slug)
     console.log(slug);
 
-    const kv = await Deno.openKv("database/records.db");
+    const kv = await Deno.openKv();
     const res = await kv.get(["links", slug]);
     if (res.value) {
       const resp = new Response(null, {
