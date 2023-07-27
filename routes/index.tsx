@@ -48,7 +48,7 @@ export default function Home({ data }: PageProps<Data>) {
         <meta name="description" content="A litle portable URL shortener" />
       </Head>
       <div class="p-4 mx-auto max-w-screen-md">
-        <h1 class="text-6xl text-center font-bold">Shorty</h1>
+        <a href="/"><h1 class="text-6xl text-center font-bold">Shorty</h1></a>
         <p class="my-6">
           Shorty is a small portable url shortener designed for Deno Deploy. You can run it anywhere of course, but Shorty
           takes advantage of Deploy's strengths to make it portable, quick, and dependable.
